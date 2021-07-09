@@ -1,9 +1,9 @@
 ///assigning the variable
 let inputDir = {x: 0, y: 0};
-let foodSound = new Audio("Snake-Game/music/food.mp3");
-let gameOver = new Audio("Snake-Game/music/gameover.mp3");
-let moveSound = new Audio("Snake-Game/music/move.mp3");
-let musicSound = new Audio("Snake-Game/music/music.mp3");
+let foodSound = new Audio("/music/food.mp3");
+let gameOver = new Audio("/music/gameover.mp3");
+let moveSound = new Audio("/music/move.mp3");
+let musicSound = new Audio("/music/music.mp3");
 let lastPaintTime = 0;
 let speed = 5;
 let score = 0;
