@@ -42,12 +42,14 @@ let gameEngine = () => {
 
     if(Collide(snakeArr)){
         gameOver.play();
-        console.log(snakeArr);
+        musicSound.pause();
+        //console.log(snakeArr);
         alert("Game Over! Press any key to continue...");
         inputDir = {x:0, y:0};
         snakeArr = [{x:12,y:14}];
         score = 0;
         scoreBox.innerHTML = "Score: " + score;
+        musicSound.play();
     }
 
     // if snake eat the food add element to it 
@@ -120,7 +122,8 @@ if(hiscore  === null) {
 window.requestAnimationFrame(main);
 window.addEventListener('keydown',(e)  => {
     inputDir = {x:0 , y:1}; //start the game
-    moveSound.play();
+    musicSound.play();
+    musicSound.play();
     switch (e.key) {
         case "ArrowDown":
             //console.log("arrow down")
